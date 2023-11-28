@@ -1,0 +1,4 @@
+-Datora sastavdala-
+Veids:SSD
+Modelis:Samsung
+Cena:10.55

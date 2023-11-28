@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password validation</title>
+</head>
+<body>
+  <!-- 
+    Izveidot main.js un tajā izveidot funkciju validate(), kas pārbauda, 
+    vai parole satur vismaz vienu lielu burtu, vienu mazu 
+    un kādu simbolu (piemēram, izsaukuma zīmi).
+
+    Kļūdas paziņojumiem izmantot #err-msg elementu, citādi izmantot #success elementu, 
+    lai paziņotu, ka viss ir pareizi.
+
+    Papildus uzdevums - validēt arī pareizu e-pasta adreses izveidi
+  -->
+  <input id="email" type="text" placeholder="E-mail"><br>
+  <input id="password" type="password" placeholder="Password"><br>
+  <span id="err-msg"></span>
+  <button onclick="validate()">Create Account</button>
+  <script src="main.js"></script>
+</body>
+</html>

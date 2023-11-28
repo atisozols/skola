@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <title>Sptofy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body{
+            font-family: 'Poppins';
+            background-color:#121212;
+            color:#ffffff;
+            margin:0;
+        }
+
+        ul{
+            list-style: none;
+            padding-left: 5px;
+        }
+
+        .wrapper{
+            display:flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+
+        img{
+            height: 110px;
+        }
+
+        .album{
+            
+            display:flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .right{
+            background-color: #212121;
+            width:60%;
+            height: 400px;
+            padding:80px 20px 20px 20px;
+        }
+
+        .left .menu{
+            font-size:larger;
+        }
+
+        .menu h3{
+            color: #1db954;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left">
+            <ul class="menu">
+                <li><h3>Spotify</h3></li>
+                <li>Sākums</li>
+                <li>Meklēt</li>
+                <li>Mana bibliotēka</li>
+            </ul>
+            <ul>
+                <li>Playlist 1</li>
+                <li>Playlist 2</li>
+                <li>Playlist 3</li>
+                <li>Playlist 4</li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="album">
+                <img src="sobrock.jpeg" alt="">
+                <div class="text">
+                    <p>John Mayer</p>
+                    <p>Sob Rock</p>
+                </div>
+            </div>
+            <div class="album">
+                <img src="blonde.jpeg" alt="">
+                <div class="text">
+                    <p>Frank Ocean</p>
+                    <p>Blonde</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <pre>
+        <script>
+        function Node(data) {
+                this.data = data; //data
+                this.next = null; //saite uz nakamo
+                this.prev = null; //saite uz ieprieksejo
+        }
+        function DoublyLinkedList() {
+            this.head=null;                     //head ka pirmais
+
+            this.add=(data) => {                //pievienot jaunu node
+                var newNode = new Node(data);   //definicija jaunam node pie ievietosanas
+           
+                if (this.head==null){           //ja head 0, tad sis head bus jauns Node
+                    this.head=newNode;
+                }
+                else {
+                    var targetNode=this.head;       //sakums
+                    while (targetNode.next!=null) { //apstajamies pie pedeja elementa
+                        targetNode=targetNode.next;
+                    }
+                    targetNode.next=newNode;
+                    newNode.prev=targetNode;
+                    
+                   
+                }
+            }
+            this.addInsert=(data,position) => {
+                var newNode = new Node(data);
+                if (position==0) {
+                    newNode.next=this.head;
+                    this.head=newNode;
+                }
+                else {
+                    var targetNode=this.head;
+                    
+                    for (var i=0;i<=position-1;i++) { //atrodu kur velos ielitk node
+                        targetNode=targetNode.next;
+                    }
+                    newNode.next=targetNode;
+                    newNode.prev=targetNode.prev;
+                    targetNode.prev.next=newNode; 
+                    targetNode.prev=newNode;
+
+                }
+            }
+            this.remove=(position) => {
+                if (position==0) {
+                    this.head = this.head.next
+                }
+                else {
+                    var targetNode=this.head;
+                    
+                    for (var i=0;i<=position-1;i++) { //atrodu kur velos ielitk node
+                        targetNode=targetNode.next;
+                    }
+                    targetNode.prev.next = targetNode.next
+                    targetNode.next.prev = targetNode.prev
+                }
+            }
+        }
+        var list = new DoublyLinkedList();
+        list.add("A")
+        list.add("B")
+        list.add("C")
+
+        </script>
+    </pre>
+</body>
+</html>

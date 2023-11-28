@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>js</title>
+    <style>
+        #congrats{
+            color: green;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input id="input" type="password">
+        <button onclick="readValue();">Enter</button>
+    </div>
+    <p id="field"></p>
+    <!-- <div>
+        <input id="character" type="text">
+        <button id="btn" onclick="hangman();">Guess</button>
+    </div> -->
+    <div id="alphabet"></div>
+    <p id="congrats">Fanats</p>
+    <script src="main.js"></script>
+</body>
+</html>
+<!-- 
+readValue()
+1. nolasīt tekstu no elementa
+2. pirmo teksta burtu saglabāt masīvā guessedLetters
+3. izsaukt update() funkciju
+
+
+hangman()
+1. nolasīt minējuma burtu un ierakstīt to guessedLetters masīvā
+izsaukt
+2. izsaukt update() funkciju
+
+update()
+1. Ar ciklu ejot pāri nolasītajam vārdam, izveidot jaunu simbolu virkni, kur - liek burtu, ja tas ir iekš guessedLetters, citādi liek apakšsvītru
+2. izveidoto simbolu virkni ierakstīt HTML dokumentā 
+-->

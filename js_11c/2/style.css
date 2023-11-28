@@ -1,0 +1,49 @@
+hr{
+    width: 161px;
+    border: none;
+    border-top: 3px solid black;
+}
+
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+p{
+    width: 80%;
+}
+
+#more{
+    display: none;
+}
+
+#side-btn{
+    position: relative;
+    right: -95%;
+}
+
+.side{
+    background-color: coral;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    right: -100%;
+    transition: right 0.5s ease;
+}
+
+.opened{
+    right: 0;
+}
+
+#luksofors{
+    margin-top: 200px;
+}
+
+.luksofors{
+    background-color: black;
+    margin-top: 5px;
+    height: 55px;
+    width: 55px;
+    border-radius: 28px;
+}

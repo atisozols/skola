@@ -1,0 +1,4 @@
+-Datora sastavdala-
+Veids:Ram
+Modelis:Atmina
+Cena:5.0

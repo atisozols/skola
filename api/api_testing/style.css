@@ -1,0 +1,21 @@
+.inputs{
+    width: 400px;
+    background-color: pink;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+}
+
+.inputs *{
+    margin: 10px;
+}
+
+.inputs p{
+    height: 10px;
+}
+
+body{
+    text-align: center;
+    margin: 0;
+    background-color: rgba(215, 173, 187, 0.82);
+}

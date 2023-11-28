@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: gainsboro; */
+    height: 50vh;
+}
+
+.right{
+    width:400px;
+}
+
+.text-light{
+    color:black
+}
+.text-dark{
+    color: white;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Tree Visualization</title>
+    <style>
+        /* Add your CSS styles for the tree nodes here */
+        .node {
+            width: 40px;
+            height: 16px;
+            background-color: lightblue;
+            border: 1px solid #000;
+            text-align: center;
+            float: left;
+            margin: 0 50%;
+        }
+
+        .node :nth-child(2){
+            bottom: 40px;
+        }
+
+        /* .right{
+            position: relative;
+            left: 60px;
+        }
+
+        .left{
+            position: relative;
+            right: 60px;
+        } */
+        #tree-container{
+            display: flex;
+            justify-content: center;
+        }
+
+        .children{
+            display: flex;
+            justify-content: center;
+            min-width: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="tree-container"><div class="node left">37<div class="children"><div class="node left">17<div class="children"><div class="node left">5<div class="children"><div class="node left">2<div class="children"></div></div><div class="node right">6<div class="children"></div></div></div></div><div class="node right">18<div class="children"><div class="node right">36<div class="children"><div class="node left">27<div class="children"></div></div></div></div></div></div></div></div><div class="node right">57<div class="children"><div class="node left">56<div class="children"><div class="node left">50<div class="children"><div class="node left">48<div class="children"><div class="node left">42<div class="children"><div class="node left">41<div class="children"></div></div><div class="node right">46<div class="children"></div></div></div></div></div></div><div class="node right">55<div class="children"><div class="node left">51<div class="children"></div></div></div></div></div></div></div></div><div class="node right">97<div class="children"><div class="node left">73<div class="children"><div class="node left">58<div class="children"><div class="node right">69<div class="children"><div class="node right">71<div class="children"></div></div></div></div></div></div><div class="node right">78<div class="children"><div class="node left">76<div class="children"></div></div><div class="node right">91<div class="children"><div class="node left">84<div class="children"><div class="node right">85<div class="children"></div></div></div></div><div class="node right">96<div class="children"><div class="node left">95<div class="children"></div></div></div></div></div></div></div></div></div></div><div class="node right">198<div class="children"><div class="node left">118<div class="children"><div class="node left">99<div class="children"><div class="node right">107<div class="children"><div class="node left">103<div class="children"></div></div></div></div></div></div><div class="node right">194<div class="children"><div class="node left">182<div class="children"><div class="node left">171<div class="children"><div class="node left">122<div class="children"><div class="node left">121<div class="children"></div></div><div class="node right">155<div class="children"><div class="node left">154<div class="children"><div class="node left">124<div class="children"></div></div></div></div><div class="node right">165<div class="children"><div class="node left">159<div class="children"><div class="node right">164<div class="children"></div></div></div></div></div></div></div></div></div></div><div class="node right">178<div class="children"></div></div></div></div><div class="node right">189<div class="children"><div class="node left">188<div class="children"></div></div><div class="node right">190<div class="children"></div></div></div></div></div></div><div class="node right">197<div class="children"></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div>
+    <script src="./Binary Search Tree Visualization_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
