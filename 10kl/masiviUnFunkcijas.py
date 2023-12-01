@@ -113,10 +113,10 @@
 
 
 # 53. Ievada skaitli n. Izvadīt tos saraksta elementus, kas mazāki par n.
-nums = [2, 7, 1, 9, 6, 8, 3, 5]
+# nums = [2, 7, 1, 9, 6, 8, 3, 5]
 
-n = int(input('n: '))
-print('mazaki par n:')
+# n = int(input('n: '))
+# print('mazaki par n:')
 
 # for elem in nums:
 #   print(elem)
@@ -132,7 +132,84 @@ print('mazaki par n:')
 #   if nums[i] < n:
 #     print(nums[i])
     
+# 54. Vada skaitļus līdz ievada 0. Programma no ievadītajiem skaitļiem izveido sarakstu.
 
+# s = []
+# n = int(input('n: '))
+# while n != 0:
+#   s.append(n) # s.extend([a]) # s += [a]
+#   n = int(input('n: '))
 
+# 55. No 1. uzd saraksta izvadīt pēdējos piecus elementus.
+# # 1)
+# for i in range(len(s) - 1, len(s) - 6, -1): # (sakums, beigas, solis)
+#   print(s[i])
+# # 2) 
+# s.reverse()
+# for i in range(5):
+#   print(s[i])
+# # 3)
+# for i in range(1, 6):
+#   print(s[-i])
+# # 4)
+# s.reverse()
+# print(s[:5])
+  
+# 56. Izvadīt no saraksta tos elementus, kas mazāki par 12 un dalās ar 3.
 
+# for elem in s:
+#   if elem < 12:
+#     if elem % 3 == 0:
+#       print(elem)
+
+# 57. Ievada vai sagatavo divus sarakstus garumā 4, kas satur tikai ciparus (0 - 9).
+#    Uzrakstīt programmu, kas sarakstus saskaita rakstos
+
+# a = [9, 3, 6, 2]
+# b = [2, 4, 5, 1]
+# c = []
+# carry = 0
+
+# for i in range(3, -1, -1):
+#   sum = a[i] + b[i]
+#   p = sum % 10
+#   c.insert(0, p + carry)
+#   carry = sum // 10
+  
+# if carry:
+#   c.insert(0, carry)
+  
+# print(c)
+
+# SV
+
+# 1P. Saraksts par skaitli. Piemēram, [2, 8, 4] -> 284
+
+# s = [2, 8, 4]
+# sum = 0
+# for elem in s:
+#   sum = sum + elem
+#   sum = sum * 10
+  
+# print(sum // 10)
+
+# 1N. Skaitlis par sarakstu. Piemēram, 673 -> [6, 7, 3]
+
+# num = 673
+# s = []
+# while num > 0:
+#   p = num % 10
+#   num = num // 10
+
+# 2P. Vada skaitļus, kamēr ievada 0. No skaitļiem izveido sarakstu; sarakstā atrod 3 lielākos pāra skaitļus.
+
+# 2N. Vada skaitļus, kamēr ievada 0. No skaitļiem izveido sarakstu; sarakstā atrod 3 mazākos nepāra skaitļus.
+
+# 3P. Programma, kas izveido sarakstu garumā 10 no nejauši ģenerētiem nepāra skaitļiem intervālā (1, 30).
+# 3N. Programma, kas izveido sarakstu garumā 10 no unikāliem nejauši izvēlētiem skaitļiem intervālā (1, 12).
+
+# 4. Programma, kas atņem rakstos dotos sarakstus a un b, iegūstot sarakstu c.
+
+a = [1, 5, 2, 3]
+b = [1, 2, 3, 0]
 

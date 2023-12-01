@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+</head>
+<body>
+  <div class="cart">
+    <div class="product">
+      <label for="p1">Twix</label>
+      <button onclick="add_to_cart('Twix', 0.79)">Add To Cart</button>
+    </div>
+    <div class="product">
+      <label for="p2">Toblerone</label>
+      <button onclick="add_to_cart('Toblerone', 1.84)">Add To Cart</button>
+    </div>
+    <ul id="cart">
+
+    </ul>
+    <p id="total"></p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
